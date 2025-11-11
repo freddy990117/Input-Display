@@ -22,57 +22,66 @@
           <!-- Name -->
           <div class="form-floating mb-3">
             <div class="img-container">
+              <div class="form-description">
+                <h5>Phone Number</h5>
+              </div>
               <img src="/public/person.svg" alt="person-svg" srcset="" />
+              <input
+                type="text"
+                class="form-control"
+                id="Name"
+                placeholder="Enter your full name..."
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              id="Name"
-              placeholder="name"
-            />
-            <label for="Name">Enter your full name...</label>
           </div>
           <!-- Phone Number -->
           <div class="form-floating mb-3">
             <div class="img-container">
+              <div class="form-description">
+                <h5>Phone Number</h5>
+              </div>
+
               <img src="/public/telephone.svg" alt="phone-svg" srcset="" />
+              <input
+                type="number"
+                class="form-control"
+                id="phone"
+                placeholder="Enter your phone number..."
+              />
             </div>
-            <input
-              type="number"
-              class="form-control"
-              id="phone"
-              placeholder="phone"
-            />
-            <label for="phone">Enter your phone number...</label>
           </div>
           <!-- Job description -->
           <div class="form-floating mb-3">
+            <div class="form-description">
+              <h5>Job Position</h5>
+            </div>
             <div class="img-container">
               <img src="/public/briefcase.svg" alt="phone-svg" srcset="" />
+              <input
+                type="text"
+                class="form-control"
+                id="job"
+                placeholder="Job description..."
+              />
             </div>
-            <input
-              type="text"
-              class="form-control"
-              id="job"
-              placeholder="Job description..."
-            />
-            <label for="phone">Enter your Job description...</label>
           </div>
           <!-- Email -->
           <div class="form-floating mb-3">
+            <div class="form-description">
+              <h5>Email Address</h5>
+            </div>
             <div class="img-container">
               <img src="/public/email.svg" alt="Email-svg" srcset="" />
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
             </div>
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Enter your email address...</label>
           </div>
           <!-- Password -->
-          <div class="form-floating mb-3">
+          <!-- <div class="form-floating mb-3">
             <div class="img-container">
               <img src="/public/lock.svg" alt="Lock-svg" />
             </div>
@@ -90,82 +99,107 @@
             >
               <img src="/public/eyeClose.svg" alt="" />
             </button>
-          </div>
+          </div> -->
           <!-- Choose Service  -->
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox1"
-              value="option1"
-            />
-            <label class="form-check-label" for="inlineCheckbox1">1</label>
+          <h5>Choose Service</h5>
+          <div class="check-box">
+            <!-- UI/UX Design -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >UI/UX Design</label
+              >
+            </div>
+            <!-- Web Development -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Web Development</label
+              >
+            </div>
+            <!-- Brand Identity -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Brand Identity</label
+              >
+            </div>
+            <!-- Marketing -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox4"
+                value="option4"
+              />
+              <label class="form-check-label" for="inlineCheckbox4"
+                >Marketing</label
+              >
+            </div>
+            <!-- Android App Development -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox5"
+                value="option5"
+              />
+              <label class="form-check-label" for="inlineCheckbox5"
+                >Android App Development</label
+              >
+            </div>
+            <!-- IOS App Development -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox6"
+                value="option6"
+              />
+              <label class="form-check-label" for="inlineCheckbox6"
+                >IOS App Development</label
+              >
+            </div>
+            <!-- Data analysis -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox7"
+                value="option"
+              />
+              <label class="form-check-label" for="inlineCheckbox7"
+                >Data Analysis</label
+              >
+            </div>
+            <!-- Other -->
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox8"
+                value="option8"
+              />
+              <label class="form-check-label" for="inlineCheckbox8"
+                >Other</label
+              >
+            </div>
           </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox2"
-              value="option2"
-            />
-            <label class="form-check-label" for="inlineCheckbox2">2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox3"
-              value="option3"
-            />
-            <label class="form-check-label" for="inlineCheckbox3">3</label>
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox4"
-              value="option4"
-            />
-            <label class="form-check-label" for="inlineCheckbox4">4</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox5"
-              value="option5"
-            />
-            <label class="form-check-label" for="inlineCheckbox5">5</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox6"
-              value="option6"
-            />
-            <label class="form-check-label" for="inlineCheckbox6">6</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox7"
-              value="option"
-            />
-            <label class="form-check-label" for="inlineCheckbox7">7</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="inlineCheckbox8"
-              value="option8"
-            />
-            <label class="form-check-label" for="inlineCheckbox8">8</label>
-          </div>
-
           <input class="btn btn-primary" type="submit" value="Submit-Form" />
         </form>
       </div>
