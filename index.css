@@ -24,4 +24,35 @@
   background-color: tomato;
 }
 
+.img-container {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+.img-container h5 {
+  margin-left: 2%;
+}
+.form-description {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 
+.form-description img {
+  position: absolute;
+  height: 50%;
+  flex: 0.6;
+  width: 10%;
+}
+
+.form-description input {
+  outline: none;
+  text-align: start;
+  flex: 9.4;
+  border-radius: 30px;
+  padding-left: 10%;
+  border-color: #7c3aed; /* 紫色邊框 */
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2); /* 外圈亮光效果 */
+}
