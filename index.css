@@ -28,7 +28,6 @@
   text-align: start;
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 .img-container h5 {
   margin-left: 2%;
@@ -55,4 +54,19 @@
   padding-left: 10%;
   border-color: #7c3aed; /* 紫色邊框 */
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2); /* 外圈亮光效果 */
+}
+
+.check-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+}
+.check-box .check-box-text {
+  text-align: start;
+}
+
+.check-box .check-box-group {
+  display: flex;
+  flex-wrap: wrap;
 }
