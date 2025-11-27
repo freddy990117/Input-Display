@@ -11,6 +11,14 @@ console.log(submitBtn);
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("click btn");
+
+  const chechBoxes =
+    document.querySelectorAll<HTMLInputElement>(".form-check-input");
+  chechBoxes.forEach((box) => {
+    if (box.checked) {
+      console.log(box.name);
+    }
+  });
 });
 // // 透過 id 取得 HTML 中的值
 // const personPhone = document.getElementById(".phone") as HTMLInputElement;
