@@ -51,4 +51,22 @@ submitBtn.addEventListener("click", (e) => {
   };
 
   console.log(Person1);
+  const collapseButton = document.getElementById(
+    "collapse-button"
+  ) as HTMLButtonElement;
+  const collapseContent = document.getElementById(
+    "collapse-content"
+  ) as HTMLDivElement;
+
+  collapseButton.innerText = `Request Form : ${Person1.Name}`;
+  collapseContent.innerHTML = `
+  <h4>Name : ${Person1.Name} </h4>
+  <h4>Phone Number : ${Person1.Phone} </h4>
+  <h4>Job Description : ${Person1.Job} </h4>
+  <h4>Email : ${Person1.Email} </h4>
+  <h4>Service :<br/><h5>${Person1.Service}</h5> </h4>
+  <p>User want talk us : <strong>${Person1.Message} </strong></p>
+  `;
 });
+
+// 下一步 : 新增下一筆資訊時新增 According Item
