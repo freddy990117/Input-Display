@@ -40,7 +40,7 @@ submitBtn.addEventListener("click", (e) => {
   // 賦值給 messageValue
   messageValue = personMessage.value;
 
-  // 先放置在裡面印出，後續會再變更
+  // !先放置在裡面印出，後續放置的位置會再變更
   const Person1: Person = {
     Phone: Number(personPhone.value),
     Name: personName.value,
@@ -57,8 +57,9 @@ submitBtn.addEventListener("click", (e) => {
   const collapseContent = document.getElementById(
     "collapse-content"
   ) as HTMLDivElement;
-
+  // 更改文字顯示使用 innerText
   collapseButton.innerText = `Request Form : ${Person1.Name}`;
+  // 該改結構使用 innerHTML
   collapseContent.innerHTML = `
   <h4>Name : ${Person1.Name} </h4>
   <h4>Phone Number : ${Person1.Phone} </h4>
@@ -69,4 +70,8 @@ submitBtn.addEventListener("click", (e) => {
   `;
 });
 
-// 下一步 : 新增下一筆資訊時新增 According Item
+// //TODO 按下 submit-form 後，一個行為是將資料放入表單中（已完成，但是後續結構需要更改為每個使用者為新的 According Item），一個行為是 依照 id 新增 According Item，而這樣我需要：
+// 1.建立一個 fn 用於存放新的 Person 資訊（要符合 Person 的 interface 結構）
+// 2.建立一個 fn 用於「新增」 According Item （According Item 的 id 從 0 開始 ）
+// 3.更改 submit btn 的行為，按下之後先：「設定一個變數放置 1 的資訊（變數會是一個 fn」 「在到 2 中帶入參數 1 的參數」
+// 4.設定哪些 input 需要 required 5.設定無 item 時的顯示畫面 6.新增完成後，右下角跳出新增完成
