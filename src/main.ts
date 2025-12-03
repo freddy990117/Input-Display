@@ -18,7 +18,8 @@ const personMessage = document.getElementById("message") as HTMLTextAreaElement;
 const chechBoxes =
   document.querySelectorAll<HTMLInputElement>(".form-check-input");
 // 需要重新賦值所以使用 let
-let messageValue: string = "";
+let messageValue: string = ""; // 這個是放留言的變數
+let personId: number = 0; // 這個是放每一個表單的 id
 
 // 取得按鈕
 const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
@@ -28,27 +29,9 @@ submitBtn.addEventListener("click", (e) => {
 
   // 將 Person fn 放置此處並列印確認相同
   const person = newPerson();
+  newAccording(person);
   // 賦值給 messageValue
-  messageValue = personMessage.value;
-
-  console.log(person);
-  const collapseButton = document.getElementById(
-    "collapse-button"
-  ) as HTMLButtonElement;
-  const collapseContent = document.getElementById(
-    "collapse-content"
-  ) as HTMLDivElement;
-  // 更改文字顯示使用 innerText
-  collapseButton.innerText = `Request Form : ${person.Name}`;
-  // 該改結構使用 innerHTML
-  collapseContent.innerHTML = `
-  <h4>Name : ${person.Name} </h4>
-  <h4>Phone Number : ${person.Phone} </h4>
-  <h4>Job Description : ${person.Job} </h4>
-  <h4>Email : ${person.Email} </h4>
-  <h4>Service :<br/><h5>${person.Service}</h5> </h4>
-  <p>User want talk us : <strong>${person.Message} </strong></p>
-  `;
+  // messageValue = personMessage.value;
 });
 
 // 建立一個 Person fn 要符合 Person Interface
@@ -75,6 +58,13 @@ const newPerson = function (): Person {
   };
 };
 
+const newAccording = function (person: Person) {
+  // 取得 according 的主幹
+  const accrordingContatiner = document.getElementById(
+    "accordionExample"
+  ) as HTMLDivElement;
+  console.log(accrordingContatiner);
+};
 // //TODO 按下 submit-form 後，一個行為是將資料放入表單中（已完成，但是後續結構需要更改為每個使用者為新的 According Item），一個行為是 依照 id 新增 According Item，而這樣我需要：
 // 1.建立一個 fn 用於存放新的 Person 資訊（要符合 Person 的 interface 結構）
 // 2.建立一個 fn 用於「新增」 According Item （According Item 的 id 從 0 開始 ）
