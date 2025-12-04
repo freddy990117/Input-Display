@@ -26,7 +26,8 @@ const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
 // 按下送出表單會發生的行為
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
+  // 確認需要的資訊是否有輸入（ Message 與 Email )
+  checkTrim();
   // 每次點擊送出表單，建立一個 person 變數，person 變數內部的資訊由 newPerson 提供
   const person = newPerson();
   // 隨後會帶入到表單的建立
@@ -120,6 +121,20 @@ const clearInput = function () {
     box.checked = false;
   });
 };
+
+// 確認是否有輸入資訊
+const checkTrim = function () {
+  if (!personEmail.value.trim()) {
+    alert("We need your Email to contact you");
+    return;
+  }
+
+  if (!personMessage.value.trim()) {
+    alert("Please leave message to us");
+    return;
+  }
+};
+
 // //TODO 按下 submit-form 後，一個行為是將資料放入表單中（已完成，但是後續結構需要更改為每個使用者為新的 According Item），一個行為是 依照 id 新增 According Item，而這樣我需要：
 // 1.建立一個 fn 用於存放新的 Person 資訊（要符合 Person 的 interface 結構）✅
 // 2.建立一個 fn 用於「新增」 According Item （According Item 的 id 從 0 開始 ）✅
