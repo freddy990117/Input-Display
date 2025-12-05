@@ -117,3 +117,34 @@
     width: 100%;
   }
 }
+
+/* 手機以上的 RWD 設定 */
+@media screen and (max-width: 550px) {
+  .my-container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    width: 100%;
+  }
+  .left-container {
+    height: 100vh;
+  }
+  .left-container h1 {
+    padding: 1rem;
+  }
+  .left-container .form-floating {
+    margin: 0;
+  }
+  .left-container .input-group textarea {
+    height: 190px;
+  }
+  .right-container {
+    height: 100vh;
+    width: 100%;
+  }
+}
