@@ -163,3 +163,9 @@
     margin-top: 1rem;
   }
 }
+
+@media screen and (max-width: 944px) {
+  .left-container .input-group textarea {
+    height: 100px;
+  }
+}
